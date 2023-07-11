@@ -111,8 +111,8 @@ EOF
 
 print_help() {
   echo "------------------------"
-  echo "  The script is to help you move Milk-V Pioneer rootfs to NVMe ssd."
-  echo "  ** Be careful, this will erase your ssd when you select a target device."
+  echo "  This script is to help you copy Milk-V Pioneer rootfs to NVMe ssd."
+  echo "  *** Be careful, this will erase the data of your selected device."
   echo -e "------------------------\n"
 }
 
@@ -121,6 +121,6 @@ if [ "$DISTRO" == "fedora" ]; then
   print_help
   mv_rootfs
 else
-  echo '*** The script is not available on the distro'
+  echo '*** This script is not available on the distribution.'
   exit 0
 fi
